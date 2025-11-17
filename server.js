@@ -53,7 +53,7 @@ downloadApk();
 app.get("/update.json", (req, res) => {
     res.json({
         version: LATEST_VERSION,
-        url: "https://YOUR_RENDER_URL.onrender.com/app.apk"
+        url: "https://update-server-8pbc.onrender.com/app.apk"
     });
 });
 
@@ -72,3 +72,4 @@ app.get("/app.apk", (req, res) => {
 app.listen(3000, () => {
     console.log("Update server is running on port 3000");
 });
+
